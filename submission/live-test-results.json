@@ -1,0 +1,147 @@
+{
+  "purpose": "Live TinyFish Fetch extraction test, not a cached app response",
+  "input": {
+    "size": 4,
+    "level": "undergraduate",
+    "date": "2026-10-06",
+    "start": "14:00",
+    "duration": 120,
+    "flexible": true,
+    "screen": false
+  },
+  "rooms": [
+    {
+      "id": "18415",
+      "name": "De Morgan Group Study Pod",
+      "capacity": 4,
+      "floor": "Group Study Area, 3rd floor",
+      "facilities": [
+        "LCD TV",
+        "laptop projection",
+        "Myriad cluster PC",
+        "writable wall"
+      ],
+      "source": "https://library-calendars.ucl.ac.uk/space/18415",
+      "calendarSource": "https://library-calendars.ucl.ac.uk/r/accessible/availability?lid=692&gid=5421&zone=0&space=0&capacity=1&date=2026-10-06",
+      "postgraduate": false,
+      "checkedAt": "2026-10-05T18:24:56.616Z",
+      "available": false,
+      "alternative": false,
+      "match": "Seats your group of 4. UCL ID required.",
+      "evidence": "No continuous 120-minute interval fits 14:00 or starts 30–60 minutes later."
+    },
+    {
+      "id": "28580",
+      "name": "Ground Floor Group Study Room 4",
+      "capacity": 4,
+      "floor": "Group Study Area, ground floor",
+      "facilities": [
+        "Group discussion table",
+        "power points",
+        "LCD TV coming soon"
+      ],
+      "source": "https://library-calendars.ucl.ac.uk/space/28580",
+      "calendarSource": "https://library-calendars.ucl.ac.uk/r/accessible/availability?lid=692&gid=5421&zone=0&space=0&capacity=1&date=2026-10-06",
+      "postgraduate": false,
+      "checkedAt": "2026-10-05T18:24:56.616Z",
+      "available": false,
+      "alternative": false,
+      "match": "Seats your group of 4. UCL ID required.",
+      "evidence": "No continuous 120-minute interval fits 14:00 or starts 30–60 minutes later."
+    },
+    {
+      "id": "18421",
+      "name": "Ground Floor Group Study Room 1",
+      "capacity": 5,
+      "floor": "Group Study Area, ground floor",
+      "facilities": [
+        "Group discussion table",
+        "power points"
+      ],
+      "source": "https://library-calendars.ucl.ac.uk/space/18421",
+      "calendarSource": "https://library-calendars.ucl.ac.uk/r/accessible/availability?lid=692&gid=5421&zone=0&space=0&capacity=2&date=2026-10-06",
+      "postgraduate": false,
+      "checkedAt": "2026-10-05T18:24:56.616Z",
+      "available": false,
+      "alternative": false,
+      "match": "Seats your group of 4. UCL ID required.",
+      "evidence": "No continuous 120-minute interval fits 14:00 or starts 30–60 minutes later."
+    },
+    {
+      "id": "18419",
+      "name": "Engineering Group Study Room",
+      "capacity": 6,
+      "floor": "Group Study Area, 4th floor",
+      "facilities": [
+        "Meeting table with chairs"
+      ],
+      "source": "https://library-calendars.ucl.ac.uk/space/18419",
+      "calendarSource": "https://library-calendars.ucl.ac.uk/r/accessible/availability?lid=692&gid=5421&zone=0&space=0&capacity=3&date=2026-10-06",
+      "postgraduate": false,
+      "checkedAt": "2026-10-05T18:24:56.616Z",
+      "available": false,
+      "alternative": false,
+      "match": "Seats your group of 4. UCL ID required.",
+      "evidence": "No continuous 120-minute interval fits 14:00 or starts 30–60 minutes later."
+    },
+    {
+      "id": "18422",
+      "name": "Ground Floor Group Study Room 2",
+      "capacity": 7,
+      "floor": "Group Study Area, ground floor",
+      "facilities": [
+        "Group discussion table",
+        "power points"
+      ],
+      "source": "https://library-calendars.ucl.ac.uk/space/18422",
+      "calendarSource": "https://library-calendars.ucl.ac.uk/r/accessible/availability?lid=692&gid=5421&zone=0&space=0&capacity=4&date=2026-10-06",
+      "postgraduate": false,
+      "checkedAt": "2026-10-05T18:24:56.616Z",
+      "available": false,
+      "alternative": false,
+      "match": "Seats your group of 4. UCL ID required.",
+      "evidence": "No continuous 120-minute interval fits 14:00 or starts 30–60 minutes later."
+    },
+    {
+      "id": "18426",
+      "name": "Ground Floor Group Study Room 3",
+      "capacity": 7,
+      "floor": "Group Study Area, ground floor",
+      "facilities": [
+        "Group discussion table",
+        "power points",
+        "LCD TV coming soon"
+      ],
+      "source": "https://library-calendars.ucl.ac.uk/space/18426",
+      "calendarSource": "https://library-calendars.ucl.ac.uk/r/accessible/availability?lid=692&gid=5421&zone=0&space=0&capacity=4&date=2026-10-06",
+      "postgraduate": false,
+      "checkedAt": "2026-10-05T18:24:56.616Z",
+      "available": false,
+      "alternative": false,
+      "match": "Seats your group of 4. UCL ID required.",
+      "evidence": "No continuous 120-minute interval fits 14:00 or starts 30–60 minutes later."
+    },
+    {
+      "id": "18427",
+      "name": "Massey Group Study Pod",
+      "capacity": 9,
+      "floor": "Group Study Area, 3rd floor",
+      "facilities": [
+        "LCD TV",
+        "laptop projection",
+        "Myriad cluster PC",
+        "writeable wall"
+      ],
+      "source": "https://library-calendars.ucl.ac.uk/space/18427",
+      "calendarSource": "https://library-calendars.ucl.ac.uk/r/accessible/availability?lid=692&gid=5421&zone=0&space=0&capacity=4&date=2026-10-06",
+      "postgraduate": false,
+      "checkedAt": "2026-10-05T18:24:56.616Z",
+      "available": false,
+      "alternative": false,
+      "match": "Seats your group of 4. UCL ID required.",
+      "evidence": "No continuous 120-minute interval fits 14:00 or starts 30–60 minutes later."
+    }
+  ],
+  "excluded": [],
+  "checkedAt": "2026-10-05T18:24:56.616Z"
+}

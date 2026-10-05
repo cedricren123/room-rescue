@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {covers,matchRooms,parseCalendar,validateRequest} from '../lib/room-engine.mjs';
+const request={size:4,level:'undergraduate',date:'2026-10-06',start:'14:00',duration:120,flexible:true,screen:false};
+const room={id:'1',name:'Test room',capacity:4,facilities:['LCD TV'],floor:'Third floor',source:'https://example.com',calendarSource:'https://example.com',slots:[],postgraduate:false};
+test('rejects gaps within a requested continuous session',()=>{assert.equal(covers([{start:840,end:870},{start:900,end:960}],840,960),false);assert.equal(covers([{start:840,end:900},{start:900,end:960}],840,960),true);});
+test('suggests only allowed later starts and keeps the full duration',()=>{const r={...room,slots:[{start:870,end:990}]};const flexible=matchRooms([r],request);assert.equal(flexible.rooms[0].interval,'14:30–16:30 · 2026-10-06');assert.equal(flexible.rooms[0].alternative,true);assert.equal(matchRooms([r],{...request,flexible:false}).rooms[0].available,false);});
+test('does not relax capacity or postgraduate restrictions',()=>{assert.equal(matchRooms([{...room,capacity:3}],request).rooms.length,0);assert.equal(matchRooms([{...room,postgraduate:true}],request).rooms.length,0);assert.equal(matchRooms([{...room,postgraduate:true}],{...request,level:'postgraduate'}).rooms.length,1);});
+test('requires published screen facilities when requested',()=>{assert.equal(matchRooms([{...room,facilities:['Writable wall']}],{...request,screen:true}).rooms.length,0);});
+test('a TV coming soon does not satisfy a screen requirement',()=>{assert.equal(matchRooms([{...room,facilities:['LCD TV coming soon']}],{...request,screen:true}).rooms.length,0);assert.equal(matchRooms([room],{...request,screen:true}).rooms.length,1);});
+test('missing calendar structure remains unknown, not unavailable',()=>{assert.throws(()=>parseCalendar('<h1>Available</h1>',request.date,'https://example.com'),/did not expose/);});
+test('validates booking window, calendar dates and duration',()=>{const now=new Date('2026-10-05T17:00:00Z');assert.equal(validateRequest(request,now).duration,120);assert.throws(()=>validateRequest({...request,date:'2026-10-10'},now),/three days/);assert.throws(()=>validateRequest({...request,date:'2026-02-30'},now),/valid meeting date/);assert.throws(()=>validateRequest({...request,start:'23:30'},now),/midnight/);});
